@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    font-family: sans-serif;
+    padding: 90px 20px 0;
+}
+
+.header{
+    background-color: #394867;
+    height: 80px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    max-width: 992px;
+    margin: 0 auto;
+    
+}
+
+.nav-link{
+    color: white;
+    text-decoration: none;
+}
+
+.logo{
+    font-size: 30px;
+    font-weight: bold;
+    padding: 0 40px;
+    line-height: 80px;
+}
+
+.nav-menu{
+    display: flex;
+    margin-right: 40px;
+    list-style: none;
+}
+
+.nav-menu-item{
+    font-size: 18px;
+    margin: 0 10px;
+    line-height: 80px;
+    text-transform: uppercase;
+    width: max-content;
+}
+
+.nav-menu-link{
+    padding: 8px 12px;
+    border-radius: 3px;
+}
+
+.nav-menu-link:hover,
+.nav-menu.link_active{
+    background-color: #345743;
+    transition: .5s;
+}
+
+.nav-toggle{
+    color: white;
+    background: none;
+    border: none;
+    font-size: 30px;
+    padding: 0 20px;
+    line-height: 60px;
+
+    display: none;
+}
+
+.breakpoint{
+    max-width: 100%;
+    display: inline-block;
+    }
+
+.alcaldia{
+    display: flex;
+  justify-content: center;
+    }
+
+/*@media (min-width: 420px) {
+        breakpoint  {
+        max-width: 48%;
+        }
+     }
+        /* 4 columnas para grandes dispositivos*/
+/*@media (min-width: 760px) {
+        breakpoint  {
+        max-width: 24%;
+        }
+        }*/
+
+@media (max-width: 768px){
+    body{
+        
+        padding-top: 70px;
+    }
+    .header{
+        height: 60px;   
+    }
+    
+    .logo{
+        font-size: 25px;
+        padding: 0 20px;
+        line-height: 60px;
+    }
+    
+    .nav-menu{
+        flex-direction: column;
+        align-items: center;
+        margin-right: 20px;
+        background-color: #394867;
+        position: fixed;
+        left: 0;
+        top: 60px;
+        width: 100%;
+        padding: 20px 0;
+
+        height: calc(100% - 60px);
+        overflow-y: auto;
+
+        left: 100%;
+        transition: left .3s;
+    }
+ 
+    .nav-menu-link:hover,
+    .nav-menu_link_active{
+        background: none;
+        color: #83c5f7;
+    }
+
+    .nav-toggle{    
+        display: block;
+    }
+
+    .nav-menu_visible{
+        left: 0;
+    }
+
+    .nav-toggle:focus:not(:focus-visible){
+        outline: none;
+    }
+    .logoalcaldia{
+        width: 60%;
+        height: 60%;
+    }
+    
+}
