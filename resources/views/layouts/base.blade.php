@@ -17,8 +17,8 @@
                 <i class="fa-solid fa-bars"></i>
               </button>
             <ul class="nav-menu nav-menu_visible">
-                <li class="nav-menu-item"><a href="index.html" class="nav-menu-link nav-link">Inicio</a></li>
-                <li class="nav-menu-item"><a href="admon/index.html" class="nav-menu-link nav-link">Admon</a></li>
+                <li class="nav-menu-item"><a href="{{route('direcc.index')}}" class="nav-menu-link nav-link">Inicio</a></li>
+                <li class="nav-menu-item"><a href="{{'admon'}}" class="nav-menu-link nav-link">Admon</a></li>
                 <li class="nav-menu-item"><a href="#" class="nav-menu-link nav-link">Escenarios</a></li>
                 <li class="nav-menu-item"><a href="#" class="nav-menu-link nav-link">Mantenimientos</a></li>
                 <li class="nav-menu-item"><a href="#" class="nav-menu-link nav-link">Solicitud</a></li>

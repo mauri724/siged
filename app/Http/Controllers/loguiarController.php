@@ -14,4 +14,10 @@ class loguiarController extends Controller
         //return "hola a todos";
         return view('index');
     }
+    public function index()
+    {
+        return view('index');
+    }
+
+
 }
