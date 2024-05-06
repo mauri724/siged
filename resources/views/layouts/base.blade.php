@@ -8,6 +8,7 @@
     <script src="https://kit.fontawesome.com/f07ab53199.js" crossorigin="anonymous">
     </script>
     <script defer src="../js/js.js"></script>
+    
 </head>
 <body>
     <header class="header">
